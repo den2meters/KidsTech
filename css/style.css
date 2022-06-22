@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -91,4 +92,91 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+/*------------Fonts---------*/
+body {
+  font-family: Dosis;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+/*-----------Head----------*/
+.head {
+  width: 100%;
+  background-color: #4e66d1;
+}
+
+.head__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head__link:not(:last-child) {
+  margin: 0px 104px 0px 0px;
+}
+
+.head__link a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: #E8E6F8;
+  text-transform: uppercase;
+}
+
+.head__link a:hover {
+  text-decoration: underline;
 }

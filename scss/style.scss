@@ -1,3 +1,75 @@
 @import "_nullstyle";
 
+/*------------Fonts---------*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
 
+
+body {
+   font-family: Dosis;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+}
+.container {
+   max-width: 1320px;
+   margin: 0px auto;
+   padding: 0px 15px;
+}
+.main {
+   flex: 1 1 auto;
+}
+/*-----------Head----------*/
+
+.head {
+   width: 100%;
+   background-color: rgb(78, 102, 209);
+   &__container {
+   }
+
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__menu {
+
+   }
+
+   &__links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__link {
+      &:not(:last-child){
+         margin: 0px 104px 0px 0px;
+      }
+      a {
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 120%;
+         color: #E8E6F8;
+         text-transform: uppercase;
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+
+   }
+}
+
+
+
+.footer {}
